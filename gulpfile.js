@@ -121,4 +121,4 @@ gulp.task('build', function(){
 
 });
 
-gulp.task('default', ['server', 'livereload', 'styles', 'watch', 'lint']);
+gulp.task('default', ['server', 'livereload', 'styles', 'watch']);
