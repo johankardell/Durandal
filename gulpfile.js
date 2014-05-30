@@ -61,8 +61,7 @@ gulp.task('styles', function(){
 
 gulp.task('lint', function() {
   gulp.src(paths.app.js + '/**/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('jshint-stylish'));
+    .pipe(jshint());
 });
 
 gulp.task('server', function(){
@@ -121,4 +120,4 @@ gulp.task('build', function(){
 
 });
 
-gulp.task('default', ['server', 'livereload', 'styles', 'watch']);
+gulp.task('default', ['server', 'livereload', 'styles', 'watch', 'lint']);
